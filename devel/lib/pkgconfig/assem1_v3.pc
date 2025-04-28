@@ -1,0 +1,8 @@
+prefix=/home/duc/ROS/myurdf/devel
+
+Name: assem1_v3
+Description: Description of assem1_v3
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

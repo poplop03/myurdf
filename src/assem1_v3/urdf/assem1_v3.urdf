@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="assem1_v3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000299600199777231 -0.000764061882273957 0.0537544977182631"
+        rpy="0 0 0" />
+      <mass
+        value="0.474902049786311" />
+      <inertia
+        ixx="0.000923329864477317"
+        ixy="-4.43221087948289E-08"
+        ixz="-2.49993493078692E-07"
+        iyy="0.000799649174928032"
+        iyz="-3.8965322840191E-09"
+        izz="0.00171301458246196" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="R_wheel_link">
+    <inertial>
+      <origin
+        xyz="5.79914897208865E-05 0.00581998639718487 -0.000850837265000506"
+        rpy="0 0 0" />
+      <mass
+        value="0.0419551495558989" />
+      <inertia
+        ixx="1.83735079380309E-05"
+        ixy="-1.8161867336429E-11"
+        ixz="-2.11067047770524E-09"
+        iyy="3.09193291489183E-05"
+        iyz="4.30067176399892E-10"
+        izz="1.84082404598895E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/R_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/R_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rwheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.000404391754331336 -0.105251106428109 0.0250000000000001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="L_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.000410324113401157 -0.00581998639719117 0.000747610317289838"
+        rpy="0 0 0" />
+      <mass
+        value="0.0419551495558707" />
+      <inertia
+        ixx="1.83817046427243E-05"
+        ixy="-2.16791577850392E-10"
+        ixz="-1.48983618867278E-08"
+        iyy="3.09193291489218E-05"
+        iyz="3.71872305864825E-10"
+        izz="1.84000437551973E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/L_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/L_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lwheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.000404391754331338 0.105251106428109 0.0250000000000008"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="Ball_front_link">
+    <inertial>
+      <origin
+        xyz="4.30211422042248E-16 -6.36963151456199E-06 0.0054783181552001"
+        rpy="0 0 0" />
+      <mass
+        value="0.00517329186642788" />
+      <inertia
+        ixx="4.82436001286388E-07"
+        ixy="6.80369530823229E-16"
+        ixz="7.6361074382908E-23"
+        iyy="2.17176063753241E-07"
+        iyz="2.5529250701519E-10"
+        izz="5.28639388249639E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/Ball_front_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/Ball_front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ballfront_joint"
+    type="fixed">
+    <origin
+      xyz="0.074595608245668 -0.000183494055149488 -0.000900000000000491"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Ball_front_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Ball_back_link">
+    <inertial>
+      <origin
+        xyz="4.57966997657877E-16 -6.36963151455679E-06 0.0054783181552001"
+        rpy="0 0 0" />
+      <mass
+        value="0.00517329186642788" />
+      <inertia
+        ixx="4.82436001286388E-07"
+        ixy="6.8036947831074E-16"
+        ixz="3.24191866582681E-23"
+        iyy="2.17176063753241E-07"
+        iyz="2.55292507015317E-10"
+        izz="5.28639388249639E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/Ball_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/Ball_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ballback_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0754043917543321 -0.000183494055149433 -0.000900000000000491"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Ball_back_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Lidar_link">
+    <inertial>
+      <origin
+        xyz="0.0148415079746721 0.00032514886455901 -0.0211536208142091"
+        rpy="0 0 0" />
+      <mass
+        value="0.031240912686575" />
+      <inertia
+        ixx="8.87771234379288E-06"
+        ixy="-1.31314585238077E-07"
+        ixz="1.13309561650653E-07"
+        iyy="1.4493553042305E-05"
+        iyz="3.3673144057706E-08"
+        izz="2.25289098081205E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/Lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/Lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar_joint"
+    type="continuous">
+    <origin
+      xyz="-0.00686404999738738 -0.00013029331516768 0.1721"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="-0.00238812545770593 -0.000157206619356129 -0.00229065136771812"
+        rpy="0 0 0" />
+      <mass
+        value="0.000673876938953716" />
+      <inertia
+        ixx="2.19297264797498E-08"
+        ixy="-2.82977769065489E-14"
+        ixz="-2.69530309675252E-14"
+        iyy="9.33459184266938E-09"
+        iyz="-1.16326526466666E-14"
+        izz="2.98834978397075E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v3/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00494016789724259 -0.0369909162737564 0.114519999987995"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+
+    <!-- Plugin update rate in Hz -->
+    <updateRate>${50}</updateRate>
+
+    <!-- Name of left joint, defaults to `left_joint` -->
+    <leftJoint>Lwheel_joint</leftJoint>
+
+    <!-- Name of right joint, defaults to `right_joint` -->
+    <rightJoint>Rwheel_joint</rightJoint>
+
+    <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+    <wheelSeparation>0.2105</wheelSeparation>
+
+    <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+    <wheelDiameter>0.063</wheelDiameter>
+
+    <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+    <wheelAcceleration>3.0</wheelAcceleration>
+
+    <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+    <wheelTorque>20</wheelTorque>
+
+    <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+    <commandTopic>cmd_vel</commandTopic>
+
+    <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+    <odometryTopic>odom</odometryTopic>
+
+    <!-- Odometry frame, defaults to `odom` -->
+    <odometryFrame>odom</odometryFrame>
+
+    <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+    <robotBaseFrame>base_link</robotBaseFrame>
+
+    <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+    <odometrySource>1</odometrySource>
+
+    <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+    <publishWheelTF>true</publishWheelTF>
+
+    <!-- Set to true to publish transforms for the odometry, defaults to true -->
+    <publishOdom>true</publishOdom>
+
+    <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+    <publishWheelJointState>true</publishWheelJointState>
+
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+  </plugin>
+  
+</gazebo>
+</robot>

@@ -11,12 +11,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "assem1_v3/catkin_generated/package.cmake"
+  "assem1_v4/catkin_generated/package.cmake"
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
   "/home/duc/ROS/myurdf/src/CMakeLists.txt"
   "/home/duc/ROS/myurdf/src/assem1_v3/CMakeLists.txt"
   "/home/duc/ROS/myurdf/src/assem1_v3/package.xml"
+  "/home/duc/ROS/myurdf/src/assem1_v4/CMakeLists.txt"
+  "/home/duc/ROS/myurdf/src/assem1_v4/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -155,6 +158,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "assem1_v3/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "assem1_v4/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

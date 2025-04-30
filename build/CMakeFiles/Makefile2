@@ -55,12 +55,14 @@ CMAKE_BINARY_DIR = /home/duc/ROS/myurdf/build
 # The main recursive "all" target.
 all: gtest/all
 all: assem1_v3/all
+all: assem1_v4/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: assem1_v3/preinstall
+preinstall: assem1_v4/preinstall
 
 .PHONY : preinstall
 
@@ -72,6 +74,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: assem1_v3/clean
+clean: assem1_v4/clean
 
 .PHONY : clean
 
@@ -92,6 +95,24 @@ assem1_v3/preinstall:
 assem1_v3/clean: assem1_v3/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : assem1_v3/clean
+
+#=============================================================================
+# Directory level rules for directory assem1_v4
+
+# Recursive "all" directory target.
+assem1_v4/all:
+
+.PHONY : assem1_v4/all
+
+# Recursive "preinstall" directory target.
+assem1_v4/preinstall:
+
+.PHONY : assem1_v4/preinstall
+
+# Recursive "clean" directory target.
+assem1_v4/clean:
+
+.PHONY : assem1_v4/clean
 
 #=============================================================================
 # Directory level rules for directory gtest

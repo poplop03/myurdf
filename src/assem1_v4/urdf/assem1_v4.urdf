@@ -3,21 +3,21 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="assem1_v3">
+  name="assem1_v4">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.000299600199777231 -0.000764061882273957 0.0537544977182631"
+        xyz="-0.000299600199777236 -0.000764061882273962 0.0537544977182631"
         rpy="0 0 0" />
       <mass
         value="0.474902049786311" />
       <inertia
         ixx="0.000923329864477317"
-        ixy="-4.43221087948289E-08"
-        ixz="-2.49993493078692E-07"
+        ixy="-4.432210879482E-08"
+        ixz="-2.49993493078715E-07"
         iyy="0.000799649174928032"
-        iyz="-3.8965322840191E-09"
+        iyz="-3.89653228401918E-09"
         izz="0.00171301458246196" />
     </inertial>
     <visual>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/base_link.STL" />
+          filename="package://assem1_v4/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/base_link.STL" />
+          filename="package://assem1_v4/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="R_wheel_link">
     <inertial>
       <origin
-        xyz="5.79914897208865E-05 0.00581998639718487 -0.000850837265000506"
+        xyz="0.000423204973116017 0.00581998639716252 -0.000740394904887015"
         rpy="0 0 0" />
       <mass
-        value="0.0419551495558989" />
+        value="0.0419551495559627" />
       <inertia
-        ixx="1.83735079380309E-05"
-        ixy="-1.8161867336429E-11"
-        ixz="-2.11067047770524E-09"
-        iyy="3.09193291489183E-05"
-        iyz="4.30067176399892E-10"
-        izz="1.84082404598895E-05" />
+        ixx="1.83817688523008E-05"
+        ixy="-2.03879953368318E-10"
+        ixz="-1.49376909438339E-08"
+        iyy="3.09193291489253E-05"
+        iyz="3.7910497666528E-10"
+        izz="1.83999795456458E-05" />
     </inertial>
     <visual>
       <origin
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/R_wheel_link.STL" />
+          filename="package://assem1_v4/meshes/R_wheel_link.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/R_wheel_link.STL" />
+          filename="package://assem1_v4/meshes/R_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -101,16 +101,16 @@
     name="L_wheel_link">
     <inertial>
       <origin
-        xyz="-0.000410324113401157 -0.00581998639719117 0.000747610317289838"
+        xyz="-0.000410324113401153 -0.00581998639719117 0.000747610317289837"
         rpy="0 0 0" />
       <mass
-        value="0.0419551495558707" />
+        value="0.0419551495558706" />
       <inertia
         ixx="1.83817046427243E-05"
-        ixy="-2.16791577850392E-10"
+        ixy="-2.16791577850274E-10"
         ixz="-1.48983618867278E-08"
         iyy="3.09193291489218E-05"
-        iyz="3.71872305864825E-10"
+        iyz="3.71872305864664E-10"
         izz="1.84000437551973E-05" />
     </inertial>
     <visual>
@@ -119,7 +119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/L_wheel_link.STL" />
+          filename="package://assem1_v4/meshes/L_wheel_link.STL" />
       </geometry>
       <material
         name="">
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/L_wheel_link.STL" />
+          filename="package://assem1_v4/meshes/L_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -150,22 +150,21 @@
     <axis
       xyz="0 -1 0" />
   </joint>
-  
   <link
-    name="Lidar_link">
+    name="Ball_front_link">
     <inertial>
       <origin
-        xyz="0.0148415079746721 0.00032514886455901 -0.0211536208142091"
+        xyz="4.57966997657877E-16 -3.53026803513214E-06 0.00545097611897468"
         rpy="0 0 0" />
       <mass
-        value="0.031240912686575" />
+        value="0.00525183168276763" />
       <inertia
-        ixx="8.87771234379288E-06"
-        ixy="-1.31314585238077E-07"
-        ixz="1.13309561650653E-07"
-        iyy="1.4493553042305E-05"
-        iyz="3.3673144057706E-08"
-        izz="2.25289098081205E-05" />
+        ixx="4.83733544502167E-07"
+        ixy="6.80369534809298E-16"
+        ixz="6.47002468094357E-23"
+        iyy="2.1847360696902E-07"
+        iyz="2.5529250701522E-10"
+        izz="5.29149897055848E-07" />
     </inertial>
     <visual>
       <origin
@@ -173,7 +172,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/Lidar_link.STL" />
+          filename="package://assem1_v4/meshes/Ball_front_link.STL" />
       </geometry>
       <material
         name="">
@@ -187,7 +186,113 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/Lidar_link.STL" />
+          filename="package://assem1_v4/meshes/Ball_front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ballfront_joint"
+    type="fixed">
+    <origin
+      xyz="0.074595608245668 -0.000183494055149488 0.00159999999999952"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Ball_front_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Ball_back_link">
+    <inertial>
+      <origin
+        xyz="4.44089209850063E-16 -3.53026803512693E-06 0.00545097611897468"
+        rpy="0 0 0" />
+      <mass
+        value="0.00525183168276762" />
+      <inertia
+        ixx="4.83733544502167E-07"
+        ixy="6.80369462261404E-16"
+        ixz="3.87749648050902E-23"
+        iyy="2.18473606969021E-07"
+        iyz="2.55292507015327E-10"
+        izz="5.29149897055847E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v4/meshes/Ball_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v4/meshes/Ball_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ballback_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0754043917543321 -0.000183494055149433 0.00159999999999952"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Ball_back_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Lidar_link">
+    <inertial>
+      <origin
+        xyz="0.0148415079751369 0.000325148864721077 -0.0211536208141642"
+        rpy="0 0 0" />
+      <mass
+        value="0.0312409126861326" />
+      <inertia
+        ixx="8.87771234373125E-06"
+        ixy="-1.31314585063882E-07"
+        ixz="1.13309561626867E-07"
+        iyy="1.4493553041838E-05"
+        iyz="3.3673144047221E-08"
+        izz="2.25289098075929E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v4/meshes/Lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem1_v4/meshes/Lidar_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -208,16 +313,16 @@
     name="imu_link">
     <inertial>
       <origin
-        xyz="-0.00238812545770593 -0.000157206619356129 -0.00229065136771812"
+        xyz="-0.00238812545770593 -0.000157206619356118 -0.00229065136771811"
         rpy="0 0 0" />
       <mass
         value="0.000673876938953716" />
       <inertia
         ixx="2.19297264797498E-08"
-        ixy="-2.82977769065489E-14"
-        ixz="-2.69530309675252E-14"
+        ixy="-2.82977769065327E-14"
+        ixz="-2.6953030967514E-14"
         iyy="9.33459184266938E-09"
-        iyz="-1.16326526466666E-14"
+        iyz="-1.16326526466434E-14"
         izz="2.98834978397075E-08" />
     </inertial>
     <visual>
@@ -226,7 +331,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/imu_link.STL" />
+          filename="package://assem1_v4/meshes/imu_link.STL" />
       </geometry>
       <material
         name="">
@@ -240,7 +345,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://assem1_v3/meshes/imu_link.STL" />
+          filename="package://assem1_v4/meshes/imu_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -257,6 +362,7 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
 
 <gazebo>
   <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
@@ -295,7 +401,7 @@
     <robotBaseFrame>base_link</robotBaseFrame>
 
     <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
-    <odometrySource>1</odometrySource>
+    <odometrySource>0</odometrySource>
 
     <!-- Set to true to publish transforms for the wheel links, defaults to false -->
     <publishWheelTF>true</publishWheelTF>
@@ -307,8 +413,49 @@
     <publishWheelJointState>true</publishWheelJointState>
 
     <!-- Set to true to swap right and left wheels, defaults to true -->
-    <legacyMode>false</legacyMode>
+    <legacyMode>true</legacyMode>
   </plugin>
   
 </gazebo>
+
+
+
+
+  <!-- lidar -->
+  <gazebo reference="Lidar_link">
+    <sensor type="gpu_ray" name="lidar">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>12</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise parameters based on published spec for Hokuyo laser
+               achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
+               stddev of 0.01m will put 99.7% of samples within 0.03m of the true
+               reading. -->
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_gpu_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>laser</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
 </robot>

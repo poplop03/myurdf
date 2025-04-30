@@ -1,2 +1,2 @@
-assem1_v3
+assem1_v3:assem1_v4
 -DCATKIN_DEVEL_PREFIX=/home/duc/ROS/myurdf/devel -DCMAKE_INSTALL_PREFIX=/home/duc/ROS/myurdf/install -G Unix Makefiles

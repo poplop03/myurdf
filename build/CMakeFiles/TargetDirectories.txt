@@ -43,3 +43,10 @@
 /home/duc/ROS/myurdf/build/assem1_v3/CMakeFiles/edit_cache.dir
 /home/duc/ROS/myurdf/build/assem1_v3/CMakeFiles/test.dir
 /home/duc/ROS/myurdf/build/assem1_v3/CMakeFiles/_catkin_empty_exported_target.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/install/strip.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/install/local.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/install.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/list_install_components.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/rebuild_cache.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/edit_cache.dir
+/home/duc/ROS/myurdf/build/assem1_v4/CMakeFiles/test.dir
